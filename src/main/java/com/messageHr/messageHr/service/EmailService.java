@@ -34,7 +34,7 @@ public class EmailService {
 				helper.setTo(toEmail); 
 				helper.setSubject(subject);
 				helper.setText(body, true); 
-				helper.setFrom(fromEmail);
+				helper.setFrom(fromEmail, "Talha Ansari");
 
 				if (attachment != null && !attachment.isEmpty()) {
 					helper.addAttachment(attachment.getOriginalFilename(),
